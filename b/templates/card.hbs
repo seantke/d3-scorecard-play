@@ -1,0 +1,26 @@
+<div class="card">
+  <h3>{{d.INSTNM}}</h3>
+  <div class="graph">
+    <div class="card-column">
+      <span class="bar-title">Average Annual Cost</span>
+      <div class="outer-bar-graph" id="annual-cost" data-max="80000" data-val="39095">
+        <figure class="inner-bar-graph" style="height:{{parse_data d.NPT4_PUB 'annual-cost'}}"></figure>
+      </div>
+      <span class="bar-figure">{{parse_data d.NPT4_PUB "money"}}</span>
+    </div>
+    <div class="card-column">
+      <span class="bar-title">Graduation Rate</span>
+      <div class="outer-bar-graph" id="grad-rate" data-max="1" data-val="0.52">
+        <figure class="inner-bar-graph" style="height:{{parse_data d.C150_4_POOLED_SUPP 'decimal'}}"></figure>
+      </div>
+      <span class="bar-figure">{{parse_data d.C150_4_POOLED_SUPP "decimal"}}</span>
+    </div>
+    <div class="card-column">
+      <span class="bar-title">Salary After Attending</span>
+      <div class="outer-bar-graph" id="salary-after" data-max="80000" data-val="27500">
+        <figure class="inner-bar-graph" style="height:{{parse_data d.MD_EARN_WNE_P10 'salary-after'}}"></figure>
+      </div>
+      <span class="bar-figure">{{parse_data d.MD_EARN_WNE_P10 "money"}}</span>
+    </div>
+  </div>
+</div>

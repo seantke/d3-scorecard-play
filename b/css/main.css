@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size:16px;
+}
+
+.pagination {
+  overflow-x: scroll;
+  white-space: nowrap;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color:white;
+  z-index:99999;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top:80px;
+}
+.card {
+  display:inline-block;
+  width:400px;
+  padding: 0 15px;
+  margin: 10px;
+  border: 1px solid #CCC;
+  border-radius:10px;
+  overflow:hidden;
+  font-size:0;
+}
+.card-column{
+  display:inline-block;
+  width:33%;
+  text-align:center;
+  font-size:1rem;
+}
+.bar-title{
+  display:block;
+}
+.bar-figure{
+  display:block;
+}
+
+.page-button {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+  min-width: 25px;
+  height: 25px;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+.graph{
+  display:inline-block;
+  margin: 30px 0;
+}
+.card h3{
+  font-size:2rem;
+  margin:30px 10px;
+  display:block;
+  text-align: center;
+}
+
+.outer-bar-graph {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  width: 80px;
+  height: 200px;
+  background-color: #EFEFEF;
+}
+
+.inner-bar-graph {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-height:100%;
+}
+
+#annual-cost figure {
+  background-color: #FF9800;
+}
+#grad-rate figure {
+  background-color: #13d460;
+}
+#salary-after figure {
+  background-color: #d41355;
+}
